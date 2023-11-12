@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 html {
     height: 100%
 }
@@ -9,7 +12,9 @@ html {
     transform: translateX(-50%);
     text-align: center;
     display: inline-block;
-    background-image: linear-gradient(to bottom left, rgba(255, 105, 180, 0.2), rgba(255, 192, 203, 0.2), rgba(255, 166, 0, 0.2));
+    background-image: linear-gradient(to bottom left, rgba(255, 105, 180, 0.2), 
+    rgba(255, 192, 203, 0.2), rgba(255, 166, 0, 0.2));
+    font-size: 1em;
 }
 /*https://stackoverflow.com/a/59997588*/
 
@@ -18,11 +23,15 @@ body {
 }
 
 h1 {
-    color: dimgray;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3vw;
+    color: rgb(30, 30, 30);
     margin-left: 20px;
 }
 
 p {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5vw;
     color: black;
 }
 
