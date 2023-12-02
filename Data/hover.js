@@ -1,11 +1,5 @@
 // This function runs when the page has loaded.
 window.onload = function() {
-  // Define your sounds and their corresponding elements here.
-  var sounds = {
-    'popsound': new Audio('https://p.scdn.co/mp3-preview/1d4dc1cd67ba78afec8cfb3e5258a9ab9b707dd8?cid=ad5ebaf37746484ca61e02068fd2988e'),
-    'junglesound': new Audio('path/to/jungle/sound.mp3')
-    // Add more sounds as needed...
-  };
 
   window.PlaySound = function(soundobj) {
     var thissound = document.getElementById(soundobj);
