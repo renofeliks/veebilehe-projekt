@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="veebilehe-projekt\pophover.js"></script>
+    <title>Muusika</title>
+    <style>
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        
+        .btn {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
 </head>
 <body>
-    
+    <div class="center">
+        <button class="btn"
+        onmouseover="PlaySound('popsound')" 
+        onmouseout="StopSound('popsound')">Button 1</button>
+        <button class="btn"
+        onmouseover="PlaySound('junglesound')" 
+        onmouseout="StopSound('junglesound')">Button 2</button>
+        <button class="btn" 
+        onmouseover="PlaySound('popsound')" 
+        onmouseout="StopSound('popsound')">Button 3</button>
+    </div>
+    <audio id='popsound' src="https://p.scdn.co/mp3-preview/1d4dc1cd67ba78afec8cfb3e5258a9ab9b707dd8?cid=ad5ebaf37746484ca61e02068fd2988e"/>
+    <script src="veebilehe-projekt\hover.js"></script>
 </body>
 </html>
