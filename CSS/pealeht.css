@@ -1,10 +1,10 @@
-  .center {
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100% - 96px); /* Adjust "60px" to the actual height of your header */
   }
-        
+   
   .btn {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -17,3 +17,17 @@
     margin: 4px 2px;
     cursor: pointer;
   }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
