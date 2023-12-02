@@ -1,3 +1,22 @@
+window.onload = function() {
+    var startButton = document.getElementById('startButton');
+    var overlay = document.getElementById('overlay');
+
+    // Check if the user has visited the page before
+    if (!localStorage.getItem('visited')) {
+      // If not, show the overlay
+      overlay.style.display = 'flex';
+    } else {
+      // If yes, hide the overlay
+      overlay.style.display = 'none';
+    }
+
+    // When the start button is clicked, hide the overlay and set 'visited' to true
+    startButton.addEventListener('click', function() {
+      overlay.style.display = 'none';
+      localStorage.setItem('visited', true);
+    });
+  };
 // This function runs when the page has loaded.
 window.onload = function() {
 
