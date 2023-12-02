@@ -14,14 +14,14 @@ h1 {
 .player {
   height: 95vh;
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   justify-content: center;
 }
 
 .details {
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   justify-content: center;
   margin-top: 25px;
@@ -41,11 +41,11 @@ h1 {
 }
 
 .track-name {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .track-artist {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .buttons {
