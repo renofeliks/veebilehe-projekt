@@ -4,40 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muusika</title>
-    <style>
-        .center {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-        }
-        
-        .btn {
-          background-color: #4CAF50; /* Green */
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          cursor: pointer;
-        }
-        </style>
+    <link rel="stylesheet" href="CSS/pealeht.css">
 </head>
 <body>
-    <button id="startButton">Start</button>
     <div class="center">
-        <button class="btn"
+        <a href="HTML/hyperpop.html"><button class="btn"
         onmouseover="PlaySound('hyperpopsound')" 
-        onmouseout="StopSound('hyperpopsound')">Hyperpop</button>
-        <button class="btn"
+        onmouseout="StopSound('hyperpopsound')">Hyperpop</button></a>
+        <a href="HTML/jungle.html"><button class="btn"
         onmouseover="PlaySound('junglesound')" 
-        onmouseout="StopSound('junglesound')">Jungle</button>
-        <button class="btn" 
+        onmouseout="StopSound('junglesound')">Jungle</button></a>
+        <a href="HTML/pop.html"><button class="btn" 
         onmouseover="PlaySound('popsound')" 
-        onmouseout="StopSound('popsound')">Pop</button>
+        onmouseout="StopSound('popsound')">Pop</button></a>
     </div>
     <audio id='popsound' src="Data/pophover.mp3">
     <audio id="junglesound" src="Data/junglehover.mp3">
