@@ -157,4 +157,4 @@ function seekUpdate() {
   }
 }
 
-
+// Allikas: https://github.com/sayantanm19/js-music-player?fbclid=IwAR2NIvjMSV-u6YBuuinke7y7-nVOomEV2KPkh8mKkvgJ_81nRjZhQ3Bqs7M
