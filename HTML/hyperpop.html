@@ -3,17 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../CSS/hyperpop.css">
     <title>Hyperpop</title>
+    <!-- Load FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Meedia\favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="ekke.css">
 </head>
 <body>
-    <iframe src="header.html" style="border: none; width: 100%; height: 100px;"></iframe>
     <h1>Hyperpop</h1>
     <p>Hyperpop on muusikažanr, mis on pärit Ühendkungingriikides. Sellele, kust hyperpop žanrina alguse sai on raske näppu peale panna, aga enamus nõustuvad, et enne aastat 2018 sellise nimega 
         žanrit veel ei eksisteerinud. Ehk siis võib öelda, et hyperpop pärnieb hilis 2010ndatest. Hyperpop on oma olemuselt irooniline, eklektiline ja ülepaisutatud. Hyperpopis kasutatakse 
-        popile omaseid muusikalisi elemente, millile on vint peale keeratud.<br><br> </p>
+        popile omaseid muusikalisi elemente, millele on vint peale keeratud.<br><br> </p>
     <a href="https://en.wikipedia.org/wiki/Hyperpop#:~:text=Hyperpop%20reflects%20an%20exaggerated%2C%20eclectic,and%20the%20Web%202.0%20era." target="_blank">Hyperpopi artikkel vikipeedias</a>
     <br><br>
-    <img src="PCmusic.webp" alt="PC music" width="1440" height="750"> 
+    <img src="pildid, muud failid\PCmusic.webp" alt="PC music" width="1440" height="750"> 
+
+    <!-- Player -->>
+    <div class="player">
+      <div class="details">
+        <div class="now-playing">PLAYING x OF y</div>
+        <div class="track-art"></div>
+        <div class="track-name">Track Name</div>
+        <div class="track-artist">Track Artist</div>
+      </div>
+      <div class="buttons">
+        <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+        <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+        <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+      </div>
+      <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+      </div>
+      <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </div>
+
+    <!-- Load the main script for the player -->
+    <script src="ekke.js"></script>
 </body>
 </html>
