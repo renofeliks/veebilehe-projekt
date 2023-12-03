@@ -8,13 +8,14 @@ body {
   
 h1 {
     color: black;
-    text-align: center;
+    text-align: left;
+    margin-left: 50px;
 }
 
 p {
-    text-align: center;
-    margin-right: 100px;
-    margin-left: 100px;
+    text-align: left;
+    width: 600px;
+    margin-left: 50px;
 }
 
 .center {
