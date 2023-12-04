@@ -1,137 +1,76 @@
 body {
-  background-image: url("./../meedia/PCmusic.webp");
-
-  /* Smoothly transition the background color */
-  transition: background-color .5s;
+  background-color: white;
 
 }
-  
+
+@font-face {
+  font-family: Aeroblade;
+  src: url('./../meedia/Aeroblade\ DEMO.ttf');
+}
+
 h1 {
     color: black;
-    text-align: left;
-    margin-left: 50px;
+    text-align: center;
+    font-family: Aeroblade;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-family: Aeroblade;
+  font-size: 25px;
+  margin-top: 5%;
 }
 
 p {
-    text-align: left;
-    width: 600px;
-    margin-left: 50px;
+    text-align: center;
+    font-family: Tahoma;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: 5%;
 }
 
-.player {
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+.winXP-wrap {
+  border: 1px solid RGB(1, 63, 102);
+  margin-right: 10px;
+  border-radius: 3px;
+  display: inline;
+  margin-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  background: #f6f6f6;
+  background: -moz-linear-gradient(top, #f6f6f6 0%, #ffffff 6%, #fffdfe 12%, #fbf9fa 18%, #f8f7f5 41%, #f7f3f0 47%, #f8f3ef 82%, #e7e0d8 94%, #dad3c9 100%);
+  background: -webkit-linear-gradient(top, #f6f6f6 0%, #ffffff 6%, #fffdfe 12%, #fbf9fa 18%, #f8f7f5 41%, #f7f3f0 47%, #f8f3ef 82%, #e7e0d8 94%, #dad3c9 100%);
+  background: linear-gradient(to bottom, #f6f6f6 0%, #ffffff 6%, #fffdfe 12%, #fbf9fa 18%, #f8f7f5 41%, #f7f3f0 47%, #f8f3ef 82%, #e7e0d8 94%, #dad3c9 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#dad3c9', GradientType=0);
 }
 
-.details {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 15px;
+.winXP-btn {
+  padding: 3px 15px 3px 15px;
+  border: 2px solid transparent;
+  background: transparent;
 }
 
-.track-art {
-  margin: 25px;
-  height: 150px;
-  width: 150px;
-  background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-size: cover;
-  border-radius: 15%;
+.winXP-btn:hover,
+.winXP-btn:focus {
+  outline: 0;
+  border: 2px solid #B9D0F0;
 }
 
-.now-playing {
-  font-size: 1rem;
+.winXP-btn:active {
+  background: #dad3c9;
+  background: -moz-linear-gradient(top, #dad3c9 0%, #e7e0d8 6%, #f8f3ef 18%, #f7f3f0 53%, #f8f7f5 59%, #fbf9fa 82%, #fffdfe 88%, #ffffff 94%, #f6f6f6 100%);
+  background: -webkit-linear-gradient(top, #dad3c9 0%, #e7e0d8 6%, #f8f3ef 18%, #f7f3f0 53%, #f8f7f5 59%, #fbf9fa 82%, #fffdfe 88%, #ffffff 94%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #dad3c9 0%, #e7e0d8 6%, #f8f3ef 18%, #f7f3f0 53%, #f8f7f5 59%, #fbf9fa 82%, #fffdfe 88%, #ffffff 94%, #f6f6f6 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dad3c9', endColorstr='#f6f6f6', GradientType=0);
 }
 
-.track-name {
-  font-size: 2rem;
-}
-
-.track-artist {
-  font-size: 1.2rem;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.playpause-track, .prev-track, .next-track {
-  padding: 25px;
-  opacity: 0.8;
-
-  /* Smoothly transition the opacity */
-  transition: opacity .2s;
-}
-
-.playpause-track:hover, .prev-track:hover, .next-track:hover {
-  opacity: 1.0;
-}
-
-.slider_container {
-  width: 60%;
-  max-width: 325px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Modify the appearance of the slider */
-.seek_slider, .volume_slider {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  height: 5px;
-  background: black;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-/* Modify the appearance of the slider thumb */
-.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 10px;
+.clear {
   height: 10px;
-  background: white;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.seek_slider:hover, .volume_slider:hover {
-  opacity: 1.0;
-}
-
-.seek_slider {
-  width: 50%;
-}
-
-.volume_slider {
-  width: 25%;
-}
-
-.current-time, .total-duration {
-  padding: 8px;
-}
-
-i.fa-volume-down, i.fa-volume-up {
-  padding: 8px;
-}
-
-i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
-  cursor: pointer;
 }

@@ -10,17 +10,17 @@
 </head>
 <body>
     <iframe src="HTML/header.html" style="border: none; width: 100%; height: 100px;"></iframe>
-    <p>Et muusika mängiks kui sa hiirt hoverid nupu peal, peab veebilehte enne kusagil klikkima.</p>
+    <p>Et muusika mängiks kui sa hiirt hoverid folderi peal, peab veebilehte enne kusagil klikkima.</p>
     <div class="center">
-        <a href="HTML/hyperpop.html"><button class="btn"
+        <a href="HTML/hyperpop.html"><button class="btnHPOP"
         onmouseover="PlaySound('hyperpopsound')" 
-        onmouseout="StopSound('hyperpopsound')">Hyperpop</button></a>
-        <a href="HTML/jungle.html"><button class="btn"
+        onmouseout="StopSound('hyperpopsound')"></button></a>
+        <a href="HTML/jungle.html"><button class="btnJG"
         onmouseover="PlaySound('junglesound')" 
-        onmouseout="StopSound('junglesound')">Jungle</button></a>
-        <a href="HTML/pop.html"><button class="btn" 
+        onmouseout="StopSound('junglesound')"></button></a>
+        <a href="HTML/pop.html"><button class="btnPOP" 
         onmouseover="PlaySound('popsound')" 
-        onmouseout="StopSound('popsound')">Pop</button></a>
+        onmouseout="StopSound('popsound')"></button></a>
     </div>
     <audio id='popsound' src="JS/pophover.mp3">
     <audio id="junglesound" src="JS/junglehover.mp3">

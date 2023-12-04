@@ -1,22 +1,46 @@
+p {
+  margin-left: 1%;
+  font-family: Verdana, sans-serif;
+
+}
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 96px); /* Adjust "60px" to the actual height of your header */
+    height: calc(100% - 200px); /* Adjust "60px" to the actual height of your header */
   }
    
-  .btn {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
+  .btnHPOP {
+    background-color: rgb(255, 255, 255);
+    background-image: url('./../meedia/music_Hpop.png');
+    width: 300px; 
+    height: 300px; 
+    border: 0; 
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
   }
+
+  .btnPOP {
+    background-color: rgb(255, 255, 255);
+    background-image: url('./../meedia/music_pop.png');
+    width: 300px; 
+    height: 300px; 
+    border: 0; 
+    padding: 15px 32px;
+    cursor: pointer;
+  }
+
+  .btnJG {
+    background-color: rgb(255, 255, 255);
+    background-image: url('./../meedia/music_JG.png');
+    width: 300px; 
+    height: 300px; 
+    border: 0; 
+    padding: 15px 32px;
+    cursor: pointer;
+  }
+
   html, body {
     height: 100%;
     margin: 0;
