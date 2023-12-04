@@ -24,10 +24,8 @@ h1 {
 .center {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: calc(100% - 200px); /* Adjust "60px" to the actual height of your header */
-  }
-   
+}
+
   .btnHPOP {
     background-color: rgba(255, 255, 255, 0);
     background-image: url('./../meedia/music_Hpop.png');
