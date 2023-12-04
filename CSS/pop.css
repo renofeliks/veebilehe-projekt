@@ -40,9 +40,30 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
 }
 
 table, th, td {
     border:1px solid black;
 }
+
+.buton{
+display: inline-block;
+outline: 0;
+border: 0;
+background-image: linear-gradient(to right,#e052a0,#f15c41);
+cursor: pointer;
+border-radius: 2px;
+color: #fff;
+font-weight: 500;
+text-align: center;
+text-transform: uppercase;
+height: 36px;
+line-height: 36px;
+padding: 0 10px;
+font-size: 14px;
+}
+
+.buton:hover {
+    background-image: linear-gradient(to right,#3ec7e0,#526bf4);
+}
+                
