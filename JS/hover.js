@@ -1,5 +1,8 @@
 // This function runs when the page has loaded.
 window.onload = function() {
+  document.querySelector('#overlay').addEventListener('click', function () {
+      this.style.display = 'none';
+  });
 
   window.PlaySound = function(soundobj) {
     var thissound = document.getElementById(soundobj);
@@ -23,5 +26,3 @@ window.onload = function() {
     thissound.currentTime = 0;
   };
 };
-
-//https://stackoverflow.com/a/14926552 ja Bing AI
