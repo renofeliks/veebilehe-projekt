@@ -7,34 +7,40 @@ html {
     height: 100%
 }
 
-.footer{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.2);
-    font-size: 0.5em;
-    width: 100%;
-}
-/*https://stackoverflow.com/a/59997588*/
-
 body {
     background-image: linear-gradient(to bottom right, hotpink, pink, orange);
+    background-attachment: fixed;
 }
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 3vw;
+    text-align: center;
     color: rgb(30, 30, 30);
-    margin-left: 20px;
 }
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 5%;
+    color: rgb(30, 30, 30);
+  }
 
 p {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5vw;
     color: black;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
 }
 
 table, th, td {

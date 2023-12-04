@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Music Player</title>
+  <title>Pop Music Player</title>
   <!-- Load FontAwesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
   <!-- Load the custom CSS style file -->
-  <link rel="stylesheet" type="text/css" href="./../CSS/jungleplayer.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/popplayer.css">
 </head>
 <body>
   <div class="player">
@@ -24,18 +24,19 @@
       <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
     </div>
     <div class="slider_container">
-      <div class="current-time">00:00</div>
-      <input type="range" min="1" max="100" value="0" class="seek_slider" oninput="seekTo()">
-      <div class="total-duration">00:00</div>
-    </div>
-    <div class="slider_container">
-      <i class="fa fa-volume-down"></i>
-      <input type="range" min="1" max="100" value="99" class="volume_slider" oninput="setVolume()">
-      <i class="fa fa-volume-up"></i>
-    </div>
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek_slider" oninput="seekTo()">
+        <div class="total-duration">00:00</div>
+      </div>
+      <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="99" class="volume_slider" oninput="setVolume()">
+        <i class="fa fa-volume-up"></i>
+      </div>
+    
   </div>
 
   <!-- Load the main script for the player -->
-  <script src="./../JS/jungleplayer.js"></script>
+  <script src="../JS/popplayer.js"></script>
 </body>
 </html>
