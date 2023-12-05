@@ -29,39 +29,45 @@ h1 {
    
   .btnHPOP {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: white;
+    background: rgba(255, 255, 255, 0);
     background-image: url('./../meedia/music_Hpop.png');
     background-position: center;
     background-repeat: no-repeat;
     width: 300px; 
     height: 300px; 
     border: 0; 
+    box-sizing: border-box;
     padding: 15px 32px;
     cursor: pointer;
   }
   
   .btnPOP {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0);
-    background-image: url('./../meedia/music_pop.png');
+    background-color: white;
+    background: rgba(255, 255, 255, 0);
+    background-image: url('./../meedia/music_Hpop.png');
     background-position: center;
     background-repeat: no-repeat;
     width: 300px; 
     height: 300px; 
     border: 0; 
+    box-sizing: border-box;
     padding: 15px 32px;
     cursor: pointer;
   }
   
   .btnJG {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0);
-    background-image: url('./../meedia/music_JG.png');
+    background-color: white;
+    background: rgba(255, 255, 255, 0);
+    background-image: url('./../meedia/music_Hpop.png');
     background-position: center;
     background-repeat: no-repeat;
     width: 300px; 
     height: 300px; 
     border: 0; 
+    box-sizing: border-box;
     padding: 15px 32px;
     cursor: pointer;
   }
@@ -78,7 +84,8 @@ h1 {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
 }
 .text-container {
   text-align: center;
@@ -92,7 +99,8 @@ h1 {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
+  background: rgba(0, 0, 0, 0.8);
   color: white;
   display: flex;
   justify-content: center;
