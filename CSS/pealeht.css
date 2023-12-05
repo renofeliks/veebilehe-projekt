@@ -47,7 +47,7 @@ h1 {
     display: inline-block;
     background-color: white;
     background: rgba(255, 255, 255, 0);
-    background-image: url('./../meedia/music_Hpop.png');
+    background-image: url('./../meedia/music_pop.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* or use contain */
@@ -63,7 +63,7 @@ h1 {
     display: inline-block;
     background-color: white;
     background: rgba(255, 255, 255, 0);
-    background-image: url('./../meedia/music_Hpop.png');
+    background-image: url('./../meedia/music_JG.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* or use contain */
