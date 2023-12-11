@@ -12,14 +12,16 @@ h1 {
     color: black;
     text-align: center;
     font-family: Aeroblade;
+    font-size: 40px;
+    margin-bottom: 5%;
 }
 
 h2 {
   color: black;
   text-align: center;
   font-family: Aeroblade;
-  font-size: 25px;
-  margin-top: 5%;
+  font-size: 30px;
+  margin-top: 2%;
 }
 
 p {
@@ -27,12 +29,14 @@ p {
     font-family: Tahoma;
     margin-left: 30%;
     margin-right: 30%;
+    font-size: 20px;
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2%;
 }
 
 .centerb {
