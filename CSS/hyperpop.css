@@ -46,6 +46,7 @@ p {
 }
 
 .winXP-wrap {
+  font-size: 20px;
   border: 1px solid RGB(1, 63, 102);
   margin-right: 10px;
   border-radius: 3px;
